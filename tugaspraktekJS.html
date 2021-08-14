@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasa Pengiriman Cepat</title>
+</head>
+<body>
+    <script>
+        var a = confirm('Apakah anda ingin mengantar barang?')
+        var pengirim = prompt('masukan nama pengirim');
+        var penerima = prompt('masukan nama penerima');
+        var jarak = prompt('masukan jarak pengiriman');
+        var alamat = prompt('masukan alamat penerima');
+        var jenis = prompt('masukan jenis barang');
+        var berat = prompt('masukan berat barang');
+        var h = jarak * 10000;
+        var h1 = h * 0.10;
+        var p = berat * 5000;
+        var p1 = p * 5/100
+        var x = h-h1;
+        var x1 = p-p1
+        var a = x + x1
+
+        
+
+        var hasil = 
+        document.write('<b>DATA</b> <br>')
+        document.write('Nama pengirim:', pengirim,'<br><br>')
+        document.write('Nama penerima:', penerima, '<br><br>')
+            document.write('Jarak pengiriman:', jarak, '<br><br>')
+        document.write('alamat penerima:', alamat, '<br><br>')
+        document.write('Jenis barang:', jenis, '<br><br>')
+            document.write('berat barang:', berat, '<br><br>')
+        document.write('biaya pengiriman:', h1 + p1 ,'<br><br>') 
+        document.write('jumlah biaya jarak:',x, '<br><br>')
+        document.write('jumlah biaya berat:',x1,'<br><br>')
+        document.write('total:', a)
+
+
+    </script>
+</body>
+</html>
